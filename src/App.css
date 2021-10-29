@@ -29,8 +29,8 @@
 
   max-width: 320;
   max-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   /* align-items: center;
   justify-content: center; */
   /* font-size: calc(10px + 2vmin); */
@@ -43,7 +43,20 @@
 img {
   border-radius: 50%;
   max-height: 7vh;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 12px 10px 14px;
+}
+.name {
+  margin: 02px;
+}
+.message {
+  margin: 0px 0px 0px 0px;
+  font-size: medium;
+  color: #87929c;
+}
+.dayofmessage {
+  margin: 0px 0px 20px 80px;
+  font-size: small;
+  color: #87929c;
 }
 @keyframes App-logo-spin {
   from {
