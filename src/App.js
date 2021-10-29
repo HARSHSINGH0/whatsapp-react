@@ -1,5 +1,4 @@
 import React from "react"
-import logo from "./logo.svg"
 import "./App.css"
 import Button from "@material-ui/core/Button"
 // // import CustomButton from "./custom.js"
@@ -11,20 +10,21 @@ import IconButton from "@mui/material/IconButton"
 import SearchIcon from "@mui/icons-material/Search"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
 
-import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule"
-import { padding, width } from "@mui/system"
-import { Box } from "@mui/system"
+// image add part
+import dp from "./images/dp.jpg"
+//
+
 const CustomButton = withStyles({
   root: {
-    background: "#435a64",
+    background: "#1f2c34",
     borderRadius: 3,
     border: 0,
     color: "#01bea5",
-    height: 48,
+    height: 30,
     padding: "0 30px",
-    width: 100,
-    fontSize: 18,
-    fontWeight: "bolder",
+    width: 80,
+    fontSize: 16,
+    fontWeight: 700,
     // boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
   },
   label: {
@@ -33,15 +33,14 @@ const CustomButton = withStyles({
 })((props) => <Button {...props} />)
 const CustomButton2 = withStyles({
   root: {
-    background: "#435a64",
+    background: "#1f2c34",
     borderRadius: 3,
     border: 0,
-    color: "#98a1a4",
-    height: 48,
-    padding: "0 30px",
-    width: 100,
-    fontSize: 18,
-    fontWeight: "bolder",
+    color: "#87929c",
+    height: 30,
+    width: 80,
+    fontSize: 16,
+    fontWeight: 700,
     // boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
   },
   label: {
@@ -50,81 +49,74 @@ const CustomButton2 = withStyles({
 })((props) => <Button {...props} />)
 const CustomButton3 = withStyles({
   root: {
-    background: "#435a64",
-    borderRadius: 3,
+    background: "#1f2c34",
     border: 0,
-    color: "#98a1a4",
-    height: 48,
+    color: "#87929c",
+    height: 50,
     padding: "0 0px",
     width: 120,
-    fontSize: 23,
-    fontWeight: "initial",
-    margin: "20px 60px 20px 0px",
+    fontSize: 20,
+    fontWeight: "normal",
+    margin: "5px 110px 0px 0px",
     // boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
   },
   label: {
     textTransform: "capitalize",
   },
 })((props) => <Button {...props} />)
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Table striped bordered hover variant="dark">
           <CustomButton3>WhatsApp</CustomButton3>
-          <Button disabled></Button>
+
           {/* This is for spacing */}
           <IconButton aria-label="SearchIcon">
-            <SearchIcon style={{ color: "#98A1A4" }} />
+            <SearchIcon style={{ color: "#87929c" }} />
           </IconButton>
           <IconButton aria-label="MoreVertIcon">
-            <MoreVertIcon style={{ color: "#98A1A4" }} />
+            <MoreVertIcon style={{ color: "#87929c" }} />
           </IconButton>
         </Table>
         <Table striped bordered hover variant="dark">
-          <IconButton aria-label="CameraAltRoundedIcon">
-            <CameraAltRoundedIcon style={{ color: "#98A1A4" }} />
-          </IconButton>
-          <CustomButton>CHATS</CustomButton>
-          <CustomButton2>STATUS</CustomButton2>
-          <CustomButton2>CALLS</CustomButton2>
+          <tr>
+            <td width="90px">
+              <IconButton aria-label="CameraAltRoundedIcon">
+                <CameraAltRoundedIcon style={{ color: "#87929c" }} />
+              </IconButton>
+            </td>
+            <td width="210px">
+              <CustomButton>CHATS</CustomButton>
+            </td>
+            <td width="210px">
+              <CustomButton2>STATUS</CustomButton2>
+            </td>
+            <td width="210px">
+              <CustomButton2>CALLS</CustomButton2>
+            </td>
+          </tr>
         </Table>
-        <IconButton aria-label="HorizontalRuleIcon">
-          <HorizontalRuleIcon style={{ color: "#01bea5" }} />
-          <HorizontalRuleIcon style={{ color: "#01bea5" }} />
-          <HorizontalRuleIcon style={{ color: "#01bea5" }} />
-          <HorizontalRuleIcon style={{ color: "#01bea5" }} />
-        </IconButton>
       </header>
-      <Table striped bordered hover variant="dark">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td colSpan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </Table>
+      {/* <body className="App-line" style={{ color: "#01bea5" }}>
+        ________
+      </body> */}
+      <body className="App-body">
+        <div>
+          <Table>
+            <tr>
+              <td width="10px">
+                <img src={dp} alt="Avatar" />
+              </td>
+              <td>
+                <p className="name">Name</p>
+                <tr>Message</tr>
+              </td>
+            </tr>
+          </Table>
+        </div>
+      </body>
     </div>
   )
 }
