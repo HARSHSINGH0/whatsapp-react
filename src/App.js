@@ -110,14 +110,33 @@ function App() {
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
-                <p className="name">Name</p>
+                <p className="name">Hacks</p>
 
-                <tr className="message">Message</tr>
+                <tr>
+                  <p className="message">✔️📷 Photo</p>
+                </tr>
               </td>
               <td>
                 <p className="dayofmessage">Yesterday</p>
               </td>
             </tr>
+          </Table>
+          <Table>
+            <tr>
+              <td width="10px">
+                <img src={dp} alt="Avatar" />
+              </td>
+              <td>
+                <p className="name">Name</p>
+
+                <tr className="message">Mage</tr>
+              </td>
+              <td>
+                <p className="dayofmessage">Yesterday</p>
+              </td>
+            </tr>
+          </Table>
+          <Table>
             <tr>
               <td width="10px">
                 <img src={dp} alt="Avatar" />
@@ -131,6 +150,8 @@ function App() {
                 <p className="dayofmessage">Yesterday</p>
               </td>
             </tr>
+          </Table>
+          <Table>
             <tr>
               <td width="10px">
                 <img src={dp} alt="Avatar" />
@@ -144,6 +165,8 @@ function App() {
                 <p className="dayofmessage">Yesterday</p>
               </td>
             </tr>
+          </Table>
+          <Table>
             <tr>
               <td width="10px">
                 <img src={dp} alt="Avatar" />
@@ -157,6 +180,8 @@ function App() {
                 <p className="dayofmessage">Yesterday</p>
               </td>
             </tr>
+          </Table>
+          <Table>
             <tr>
               <td width="10px">
                 <img src={dp} alt="Avatar" />
@@ -170,45 +195,8 @@ function App() {
                 <p className="dayofmessage">Yesterday</p>
               </td>
             </tr>
-            <tr>
-              <td width="10px">
-                <img src={dp} alt="Avatar" />
-              </td>
-              <td>
-                <p className="name">Name</p>
-
-                <tr className="message">Message</tr>
-              </td>
-              <td>
-                <p className="dayofmessage">Yesterday</p>
-              </td>
-            </tr>
-            <tr>
-              <td width="10px">
-                <img src={dp} alt="Avatar" />
-              </td>
-              <td>
-                <p className="name">Name</p>
-
-                <tr className="message">Message</tr>
-              </td>
-              <td>
-                <p className="dayofmessage">Yesterday</p>
-              </td>
-            </tr>
-            <tr>
-              <td width="10px">
-                <img src={dp} alt="Avatar" />
-              </td>
-              <td>
-                <p className="name">Name</p>
-
-                <tr className="message">Message</tr>
-              </td>
-              <td>
-                <p className="dayofmessage">Yesterday</p>
-              </td>
-            </tr>
+          </Table>
+          <Table>
             <tr>
               <td width="10px">
                 <img src={dp} alt="Avatar" />
