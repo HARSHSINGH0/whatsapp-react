@@ -69,7 +69,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Table striped bordered hover variant="dark">
+        <table striped bordered hover variant="dark">
           <CustomButton3>WhatsApp</CustomButton3>
 
           {/* This is for spacing */}
@@ -79,8 +79,8 @@ function App() {
           <IconButton aria-label="MoreVertIcon">
             <MoreVertIcon style={{ color: "#87929c" }} />
           </IconButton>
-        </Table>
-        <Table striped bordered hover variant="dark">
+        </table>
+        <table striped bordered hover variant="dark">
           <tr>
             <td width="90px">
               <IconButton aria-label="CameraAltRoundedIcon">
@@ -97,14 +97,14 @@ function App() {
               <CustomButton2>CALLS</CustomButton2>
             </td>
           </tr>
-        </Table>
+        </table>
       </header>
       {/* <body className="App-line" style={{ color: "#01bea5" }}>
         ________
       </body> */}
       <body className="App-body">
         <div>
-          <Table>
+          <table>
             <tr>
               <td width="10px">
                 <img src={dp} alt="Avatar" />
@@ -120,97 +120,109 @@ function App() {
                 <p className="dayofmessage">Yesterday</p>
               </td>
             </tr>
-          </Table>
-          <Table>
+          </table>
+          <table>
             <tr>
               <td width="10px">
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
-                <p className="name">Name</p>
+                <p className="name">Hacks</p>
 
-                <tr className="message">Mage</tr>
+                <tr>
+                  <p className="message">✔️📷 Photo</p>
+                </tr>
               </td>
               <td>
                 <p className="dayofmessage">Yesterday</p>
               </td>
             </tr>
-          </Table>
-          <Table>
+          </table>
+          <table>
             <tr>
               <td width="10px">
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
-                <p className="name">Name</p>
+                <p className="name">Hacks</p>
 
-                <tr className="message">Message</tr>
+                <tr>
+                  <p className="message">✔️📷 Photo</p>
+                </tr>
               </td>
               <td>
                 <p className="dayofmessage">Yesterday</p>
               </td>
             </tr>
-          </Table>
-          <Table>
+          </table>
+          <table>
             <tr>
               <td width="10px">
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
-                <p className="name">Name</p>
+                <p className="name">Hacks</p>
 
-                <tr className="message">Message</tr>
+                <tr>
+                  <p className="message">✔️📷 Photo</p>
+                </tr>
               </td>
               <td>
                 <p className="dayofmessage">Yesterday</p>
               </td>
             </tr>
-          </Table>
-          <Table>
+          </table>
+          <table>
             <tr>
               <td width="10px">
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
-                <p className="name">Name</p>
+                <p className="name">Hacks</p>
 
-                <tr className="message">Message</tr>
+                <tr>
+                  <p className="message">✔️📷 Photo</p>
+                </tr>
               </td>
               <td>
                 <p className="dayofmessage">Yesterday</p>
               </td>
             </tr>
-          </Table>
-          <Table>
+          </table>
+          <table>
             <tr>
               <td width="10px">
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
-                <p className="name">Name</p>
+                <p className="name">Hacks</p>
 
-                <tr className="message">Message</tr>
+                <tr>
+                  <p className="message">✔️📷 Photo</p>
+                </tr>
               </td>
               <td>
                 <p className="dayofmessage">Yesterday</p>
               </td>
             </tr>
-          </Table>
-          <Table>
+          </table>
+          <table>
             <tr>
               <td width="10px">
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
-                <p className="name">Name</p>
+                <p className="name">Hacks</p>
 
-                <tr className="message">Message</tr>
+                <tr>
+                  <p className="message">✔️📷 Photo</p>
+                </tr>
               </td>
               <td>
                 <p className="dayofmessage">Yesterday</p>
               </td>
             </tr>
-          </Table>
+          </table>
         </div>
       </body>
     </div>

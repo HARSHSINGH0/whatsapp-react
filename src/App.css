@@ -1,5 +1,4 @@
 /* .App {
-  text-align: center;
 } */
 
 .App-logo {
@@ -42,7 +41,11 @@
 img {
   border-radius: 50%;
   max-height: 7vh;
-  margin: 10px 12px 10px 14px;
+  max-width: 7vh;
+  margin: 14px 14px 14px 14px;
+}
+table {
+  border: 0ch;
 }
 .name {
   margin: 02px;
