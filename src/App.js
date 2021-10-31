@@ -106,7 +106,7 @@ function App() {
         <div>
           <table>
             <tr>
-              <td width="10px">
+              <td>
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
@@ -123,7 +123,7 @@ function App() {
           </table>
           <table>
             <tr>
-              <td width="10px">
+              <td>
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
@@ -140,7 +140,7 @@ function App() {
           </table>
           <table>
             <tr>
-              <td width="10px">
+              <td>
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
@@ -157,7 +157,7 @@ function App() {
           </table>
           <table>
             <tr>
-              <td width="10px">
+              <td>
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
@@ -174,7 +174,7 @@ function App() {
           </table>
           <table>
             <tr>
-              <td width="10px">
+              <td>
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
@@ -191,7 +191,7 @@ function App() {
           </table>
           <table>
             <tr>
-              <td width="10px">
+              <td>
                 <img src={dp} alt="Avatar" />
               </td>
               <td>
@@ -208,7 +208,7 @@ function App() {
           </table>
           <table>
             <tr>
-              <td width="10px">
+              <td>
                 <img src={dp} alt="Avatar" />
               </td>
               <td>

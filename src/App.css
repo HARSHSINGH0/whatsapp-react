@@ -40,12 +40,16 @@
 }
 img {
   border-radius: 50%;
-  max-height: 7vh;
-  max-width: 7vh;
+  min-width: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  max-width: 50px;
   margin: 14px 14px 10px 14px;
 }
 table {
   border: 0ch;
+  max-width: 320px;
+  max-height: 100px;
 }
 .name {
   margin: 02px;
