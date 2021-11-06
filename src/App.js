@@ -9,7 +9,7 @@ import CameraAltRoundedIcon from "@mui/icons-material/CameraAltRounded"
 import IconButton from "@mui/material/IconButton"
 import SearchIcon from "@mui/icons-material/Search"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
-
+import { useState } from "react"
 // image add part
 import dp from "./images/dp.jpg"
 //
@@ -66,6 +66,18 @@ const CustomButton3 = withStyles({
 })((props) => <Button {...props} />)
 
 function App() {
+  const [name, setName] = useState(null)
+  const [message, setMessage] = useState(null)
+  const [days, setDays] = useState(null)
+  function getName(val) {
+    setName(val.target.value)
+  }
+  function getMessage(val) {
+    setMessage(val.target.value)
+  }
+  function getDays(val) {
+    setDays(val.target.value)
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -103,127 +115,158 @@ function App() {
         ________
       </body> */}
       <body className="App-body">
-        <div>
-          <table>
-            <tr>
-              <td>
-                <img src={dp} alt="Avatar" />
-              </td>
-              <td>
-                <p className="name">Hacks</p>
+        <table>
+          <tr width="320px" height="568px">
+            <table>
+              <tr>
+                <td>
+                  <img src={dp} alt="Avatar" />
+                </td>
+                <td>
+                  <p className="name">{name}</p>
 
-                <tr>
-                  <p className="message">✔️📷 Photo</p>
-                </tr>
-              </td>
-              <td>
-                <p className="dayofmessage">Yesterday</p>
-              </td>
-            </tr>
-          </table>
-          <table>
-            <tr>
-              <td>
-                <img src={dp} alt="Avatar" />
-              </td>
-              <td>
-                <p className="name">Hacks</p>
+                  <tr>
+                    <p className="message">{message}</p>
+                  </tr>
+                </td>
+                <td>
+                  <p className="dayofmessage">{days}</p>
+                </td>
 
-                <tr>
-                  <p className="message">✔️📷 Photo</p>
-                </tr>
-              </td>
-              <td>
-                <p className="dayofmessage">Yesterday</p>
-              </td>
-            </tr>
-          </table>
-          <table>
-            <tr>
-              <td>
-                <img src={dp} alt="Avatar" />
-              </td>
-              <td>
-                <p className="name">Hacks</p>
+                <td>
+                  <p className="tdofeditor">
+                    Name: <input type="text" size="20" onChange={getName} />
+                    Message:
+                    <input type="text" onChange={getMessage} />
+                    Day :
+                    <input type="text" onChange={getDays} />
+                    Image:
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>
+                  <img src={dp} alt="Avatar" />
+                </td>
+                <td>
+                  <p className="name">Hacks</p>
 
-                <tr>
-                  <p className="message">✔️📷 Photo</p>
-                </tr>
-              </td>
-              <td>
-                <p className="dayofmessage">Yesterday</p>
-              </td>
-            </tr>
-          </table>
-          <table>
-            <tr>
-              <td>
-                <img src={dp} alt="Avatar" />
-              </td>
-              <td>
-                <p className="name">Hacks</p>
+                  <tr>
+                    <p className="message">✔️📷 Photo</p>
+                  </tr>
+                </td>
+                <td>
+                  <p className="dayofmessage">Yesterday</p>
+                </td>
+                <td>
+                  <p className="tdofeditor">test</p>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>
+                  <img src={dp} alt="Avatar" />
+                </td>
+                <td>
+                  <p className="name">Hacks</p>
 
-                <tr>
-                  <p className="message">✔️📷 Photo</p>
-                </tr>
-              </td>
-              <td>
-                <p className="dayofmessage">Yesterday</p>
-              </td>
-            </tr>
-          </table>
-          <table>
-            <tr>
-              <td>
-                <img src={dp} alt="Avatar" />
-              </td>
-              <td>
-                <p className="name">Hacks</p>
+                  <tr>
+                    <p className="message">✔️📷 Photo</p>
+                  </tr>
+                </td>
+                <td>
+                  <p className="dayofmessage">Yesterday</p>
+                </td>
+                <td>
+                  <p className="tdofeditor">test</p>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>
+                  <img src={dp} alt="Avatar" />
+                </td>
+                <td>
+                  <p className="name">Hacks</p>
 
-                <tr>
-                  <p className="message">✔️📷 Photo</p>
-                </tr>
-              </td>
-              <td>
-                <p className="dayofmessage">Yesterday</p>
-              </td>
-            </tr>
-          </table>
-          <table>
-            <tr>
-              <td>
-                <img src={dp} alt="Avatar" />
-              </td>
-              <td>
-                <p className="name">Hacks</p>
+                  <tr>
+                    <p className="message">✔️📷 Photo</p>
+                  </tr>
+                </td>
+                <td>
+                  <p className="dayofmessage">Yesterday</p>
+                </td>
+                <td>
+                  <p className="tdofeditor">test</p>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>
+                  <img src={dp} alt="Avatar" />
+                </td>
+                <td>
+                  <p className="name">Hacks</p>
 
-                <tr>
-                  <p className="message">✔️📷 Photo</p>
-                </tr>
-              </td>
-              <td>
-                <p className="dayofmessage">Yesterday</p>
-              </td>
-            </tr>
-          </table>
-          <table>
-            <tr>
-              <td>
-                <img src={dp} alt="Avatar" />
-              </td>
-              <td>
-                <p className="name">Hacks</p>
+                  <tr>
+                    <p className="message">✔️📷 Photo</p>
+                  </tr>
+                </td>
+                <td>
+                  <p className="dayofmessage">Yesterday</p>
+                </td>
+                <td>
+                  <p className="tdofeditor">test</p>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>
+                  <img src={dp} alt="Avatar" />
+                </td>
+                <td>
+                  <p className="name">Hacks</p>
 
-                <tr>
-                  <p className="message">✔️📷 Photo</p>
-                </tr>
-              </td>
-              <td>
-                <p className="dayofmessage">Yesterday</p>
-              </td>
-            </tr>
-          </table>
-        </div>
+                  <tr>
+                    <p className="message">✔️📷 Photo</p>
+                  </tr>
+                </td>
+                <td>
+                  <p className="dayofmessage">Yesterday</p>
+                </td>
+                <td>
+                  <p className="tdofeditor">test</p>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>
+                  <img src={dp} alt="Avatar" />
+                </td>
+                <td>
+                  <p className="name">Hacks</p>
+
+                  <tr>
+                    <p className="message">✔️📷 Photo</p>
+                  </tr>
+                </td>
+                <td>
+                  <p className="dayofmessage">Yesterday</p>
+                </td>
+                <td>
+                  <p className="tdofeditor">test</p>
+                </td>
+              </tr>
+            </table>
+          </tr>
+        </table>
       </body>
     </div>
   )

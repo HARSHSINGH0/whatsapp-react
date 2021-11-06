@@ -27,7 +27,7 @@
   background-color: #131b23;
 
   max-width: 320px;
-  max-height: 568px;
+
   display: flex;
   flex-direction: column;
   /* align-items: center;
@@ -46,10 +46,13 @@ img {
   max-width: 50px;
   margin: 14px 14px 10px 14px;
 }
-table {
-  border: 0ch;
+/* table {
+  /* border: 0ch;
   max-width: 320px;
-  max-height: 100px;
+  max-height: 100px; */
+table1 {
+  min-width: 600px;
+  max-width: 600px;
 }
 .name {
   margin: 02px;
@@ -64,15 +67,26 @@ table {
   color: #87929c;
   max-width: 150px;
   min-width: 150px;
+  max-height: 21px;
 }
 
 .dayofmessage {
   /* margin: 0px 0px 20px 80px; */
   font-size: small;
   color: #87929c;
-  max-width: 100px;
+  min-width: 75px;
+  max-width: 75px;
   max-height: 100px;
   margin-top: -13px;
+}
+.tdofeditor {
+  color: #2bd639;
+  margin: 0px 0px 0px 0px;
+  font-weight: bold;
+  min-width: 600px;
+}
+editor {
+  color: #ffffff;
 }
 @keyframes App-logo-spin {
   from {
