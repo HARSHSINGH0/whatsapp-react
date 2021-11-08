@@ -85,6 +85,9 @@ table1 {
   font-weight: bold;
   min-width: 600px;
 }
+input_image {
+  margin: 100px 100px 0px 0px;
+}
 editor {
   color: #ffffff;
 }
